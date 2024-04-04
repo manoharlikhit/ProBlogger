@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  position: fixed; /* Keeps the navbar at the top of the viewport */
+  top: 0;
+  left: 0;
+  right: 0; /* Ensures the navbar extends full width */
+  z-index: 10; /* Higher index ensures the navbar is above other content */
+  background: #000; /* Adjust to match your navbar's background color */
+  /* Rest of your styling */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+}
+
+.navbar-left {
+  flex: 1;
+	margin-left: 40px;
+	margin-top: 30px;
+	color:#00df9a;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+	margin-right: 40px;
+	margin-top: 30px;
+}
+
+.oval-btn {
+  background-color: #00df9a;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.oval-btn:hover {
+  background-color: #0056b3;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000; 
+	background-size: cover;
+	/* Your background color */
+  /* padding-top: 60px; Your background color */
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid #00df9a;
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+	margin-top: 60px; 
+  padding: 30px 40px;
+  animation: fadeIn 1s ease-out forwards; /* FadeIn animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff; /* Change to initial state */
+  border-radius: 0; /* No border-radius initially */
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 0.4s; /* Transition for focus animation */
+}
+
+.input-box input:focus {
+  border-bottom: 2px solid #31C3BD; /* Animated border color */
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #4CAF50;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #00df9a;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+	margin-bottom: 20px;
+  transition: background 0.3s; /* Transition for hover effect */
+}
+
+.btn:hover {
+  background: #28a8a6; /* Slightly darker shade on hover */
+}
+
+.register-link p {
+  text-align: center;
+  font-size: 14.5px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
